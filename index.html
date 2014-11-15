@@ -1,0 +1,38 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>正在进入中....</title>
+<meta name="Generator" content="EditPlus">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+</head>
+
+<body>
+<table border='0'>
+	<form name="loginform" method=post action="">
+	<tr>
+		<td>
+		<input type="hidden" name="username" value="mfshw">
+		<input type="hidden" name="password" value="mf1234">
+		<input type="hidden" name="dbid" value="cmfd">
+		</td>
+	</tr>
+	</form>
+</table>
+
+<script language="javascript">
+	var	myhost	=	"http://epub.cnki.net";
+	autosubmit(document.loginform);
+	function autosubmit(obj)
+	{
+		var user	=	obj.username.value;
+		var pass	=	obj.password.value;
+		var selectdb	=	obj.dbid.value;
+
+		obj.action	=	myhost + "/kns/loginid.aspx?p=Navigator.aspx?ID=" + selectdb;
+		obj.submit();
+	}
+</script>
+</body>
+</html>
